@@ -15,8 +15,8 @@ app.use(express.json())
 
 // app.use("/",studentRoute)
 
-// const Auth=require("./src/Model/userModel")
-// app.use("/",Auth)
+const Auth=require("./src/Routes/AuthUserRoute")
+app.use("/",Auth)
 
 // Connection 
 
