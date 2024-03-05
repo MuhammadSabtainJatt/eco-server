@@ -11,9 +11,9 @@ app.use(cors())
 app.use(express.json())
 
 // // Routes
-// const studentRoute=require("./src/Routes/studentRoute")
+const productRoute=require("./src/Routes/ProductRoute")
 
-// app.use("/",studentRoute)
+app.use("/",productRoute)
 
 const Auth=require("./src/Routes/AuthUserRoute")
 app.use("/",Auth)
