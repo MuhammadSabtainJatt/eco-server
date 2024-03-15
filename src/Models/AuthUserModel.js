@@ -11,6 +11,7 @@ const AuthSchema = new mongoose.Schema(
   }
 );
 
+
 const AuthModel = mongoose.model("UserAuth", AuthSchema); // Changed the model name to "UserAuth"
 
 module.exports = AuthModel;

@@ -12,6 +12,8 @@ router.post("/register", async (req, res) => {
       email: req.body.email,
       password: hashedPassword,
     });
+
+    
     const user = await userData.save();
     res.status(201).json({ message: "User registered successfully!", user });
   } catch (error) {
