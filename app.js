@@ -30,7 +30,7 @@ db.once("open", () => {
     console.log('Connected to MongoDB')
     const port = process.env.PORT
     app.listen(port, () => {
-        console.log(`Server is Listining on Port ${port}`)
+        console.log(`Server is run on Port ${port}`)
     })
 })
 
